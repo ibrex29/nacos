@@ -2144,3 +2144,257 @@ a:focus {
         text-align: center;
     }
 }
+
+
+/* Start Partners CSS */
+/* Partners Section */
+.partners {
+    background: #f8f9fa; /* Light Gray Background */
+    padding: 60px 0;
+}
+
+.section-header p {
+    color: #007bff; /* Blue Accent */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Partner Item */
+.partner-item {
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+    height: 170px;
+}
+
+.partner-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Partner Logo */
+.partner-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Partner Text */
+.partner-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin: 0;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+    .partner-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .partner-text h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partners {
+        padding: 40px 0;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .partner-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .partner-text h3 {
+        font-size: 13px;
+    }
+}
+
+/* Goals aligned with SDG goals CSS */
+
+/* Goals Section */
+.goals {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* Goal Items */
+.goal-item {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.goal-item i {
+    font-size: 40px;
+    color: #08633D;
+    margin-bottom: 10px;
+}
+
+.goal-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.goal-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .goal-item {
+        flex: 0 0 100%;
+    }
+}
+
+
+/* Membership Section */
+.membership-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Wrapper */
+.membership-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Side Image - Bigger Size */
+.membership-image {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.membership-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Side Form */
+.membership-form {
+    width: 40%;
+    padding: 40px;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label i {
+    margin-right: 8px;
+    color: #08633D;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #08633D;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .membership-wrapper {
+        flex-direction: column;
+    }
+    .membership-image {
+        width: 100%;
+        height: 250px;
+    }
+    .membership-form {
+        width: 100%;
+    }
+}
