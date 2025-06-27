@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -72,18 +71,18 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="about"><i class="fas fa-person"></i> About yourself</label>
+                            <label for="about"><i class="fas fa-user-circle"></i> About yourself</label>
                             <textarea id="about" name="about" rows="4" placeholder="Tell us about yourself and your contributions to humanity"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="motivation"><i class="fas fa-phone"></i> Motivation</label>
-                            <input type="text" id="motivation" name="motivation" placeholder="What motivate you to join ISEYC" required>
+                            <label for="motivation"><i class="fas fa-heart"></i> Motivation</label>
+                            <input type="text" id="motivation" name="motivation" placeholder="What motivates you to join ISEYC?" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="motivation"><i class="fas fa-phone"></i> How do you envision using this opportunity to drive change?</label>
-                            <input type="text" id="motivation" name="motivation" placeholder="How do you envision using this opportunity to drive change?" required>
+                            <label for="visionForChange"><i class="fas fa-lightbulb"></i> How do you envision using this opportunity to drive change?</label>
+                            <input type="text" id="visionForChange" name="visionForChange" placeholder="How do you envision using this opportunity to drive change?" required>
                         </div>
 
                         <div class="form-group">
@@ -145,13 +144,26 @@
         </div>
     </div>
 
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+
+    <!-- Your Firebase configuration and utilities -->
+    <script src="js/firebase-config.js"></script>
+    
+    <!-- Page-specific JavaScript -->
+    <script src="js/membership.js"></script>
+
+    <!-- Bootstrap and other libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/parallax/parallax.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
 
 </body>
 </html>
