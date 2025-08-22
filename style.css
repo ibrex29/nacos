@@ -1,0 +1,148 @@
+/* =========================
+   NACOS – Custom Styles
+   ========================= */
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #004d00, #006600);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #00e676 !important;
+}
+.navbar-toggler {
+  border-color: #00e676;
+}
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(rgba(0, 50, 0, 0.85), rgba(0, 50, 0, 0.85)),
+    url("img/tech-bg.jpg") center/cover no-repeat;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+.page-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.page-header a {
+  color: #00e676;
+  margin: 0 5px;
+}
+
+/* Partners */
+.partner-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.partner-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,200,83,0.3);
+}
+.partner-logo img {
+  max-height: 80px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.partner-item:hover .partner-logo img {
+  transform: scale(1.1);
+}
+
+/* Partnership Benefits */
+.service {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  padding: 60px 0;
+}
+.service-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,200,83,0.25);
+}
+.service-icon {
+  font-size: 40px;
+  color: #00c853;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+.service-item:hover .service-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Contact */
+.contact .bg-white {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+}
+.btn-custom {
+  background: #00c853;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.btn-custom:hover {
+  background: #009624;
+}
+
+/* Footer */
+.footer {
+  background: #002200;
+  color: #ccc;
+  padding: 50px 0 20px;
+}
+.footer h2 {
+  color: #00c853;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer a {
+  color: #ccc;
+}
+.footer a:hover {
+  color: #00c853;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode .navbar,
+body.dark-mode .footer {
+  background: #0a0a0a !important;
+}
+body.dark-mode .service-item,
+body.dark-mode .goal-item,
+body.dark-mode .partner-item {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode a {
+  color: #00c853;
+}

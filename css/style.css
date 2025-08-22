@@ -248,6 +248,29 @@ a:focus {
     transition: .5s;
 }
 
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #004d00, #006600);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #00e676 !important;
+}
+.navbar-toggler {
+  border-color: #00e676;
+}
+
 .navbar .navbar-brand {
     margin: 0;
     color: #ffffff;
@@ -2419,4 +2442,44 @@ textarea {
 .program-filter .btn.active {
     background: #08633D;
     color: #fff;
+}
+
+/* NACOS Event Section */
+.event {
+  background: #f9f9f9;
+}
+
+.event .section-header p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.event-item {
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.event-content h3 {
+  font-weight: 700;
+  color: #004d40;
+}
+
+.event-content p {
+  font-size: 15px;
+  color: #555;
+}
+
+.event .btn-success {
+  background: #00c853;
+  border: none;
+}
+
+.event .btn-success:hover {
+  background: #009624;
 }

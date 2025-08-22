@@ -1,225 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>ISEYC - Our Programs & Events</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ISEYC Programs and Events" name="keywords">
-    <meta content="ISEYC Programs and Events" name="description">
-
+  <head>
+    <meta charset="utf-8" />
+    <title>NACOS - Our Programs & Events</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="NACOS Programs and Events" name="keywords" />
+    <meta content="NACOS Programs and Events" name="description" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicon -->
-    <link href="img/logo.png" rel="icon">
+    <link href="img/logo.png" rel="icon" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
 
     <style>
-        /* Loading spinner */
-        .loader-container {
-            text-align: center;
-            padding: 50px 0;
+      /* Loading spinner */
+      .loader-container {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .loader-spinner {
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #08633d;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+        margin: 0 auto;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
         }
 
-        .loader-spinner {
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #08633D;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 2s linear infinite;
-            margin: 0 auto;
+        100% {
+          transform: rotate(360deg);
         }
+      }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
+      /* No events message */
+      .no-events {
+        text-align: center;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 5px;
+        margin-bottom: 30px;
+      }
 
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+      .no-events p {
+        font-size: 18px;
+        color: #777;
+        margin: 0;
+      }
 
-        /* No events message */
-        .no-events {
-            text-align: center;
-            padding: 30px;
-            background: #f8f9fa;
-            border-radius: 5px;
-            margin-bottom: 30px;
-        }
+      /* Make sure all event items have the same height */
+      .event .event-item {
+        height: 100%;
+      }
 
-        .no-events p {
-            font-size: 18px;
-            color: #777;
-            margin: 0;
-        }
+      .event .event-content {
+        height: calc(100% - 200px);
+        display: flex;
+        flex-direction: column;
+      }
 
-        /* Make sure all event items have the same height */
-        .event .event-item {
-            height: 100%;
-        }
+      .event .event-text {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
 
-        .event .event-content {
-            height: calc(100% - 200px);
-            display: flex;
-            flex-direction: column;
-        }
+      .event .event-text p {
+        flex-grow: 1;
+      }
 
-        .event .event-text {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
+      .event .event-text .btn {
+        align-self: flex-start;
+        margin-top: auto;
+      }
 
-        .event .event-text p {
-            flex-grow: 1;
-        }
+      /* Make sure rows have equal height columns */
+      .row.equal-height {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-        .event .event-text .btn {
-            align-self: flex-start;
-            margin-top: auto;
-        }
-
-        /* Make sure rows have equal height columns */
-        .row.equal-height {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .row.equal-height>[class*='col-'] {
-            display: flex;
-            flex-direction: column;
-        }
+      .row.equal-height > [class*="col-"] {
+        display: flex;
+        flex-direction: column;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark shadow sticky-top p-0">
-        <div class="container-fluid">
-            <img src="./img/logo.png" width="100px" height="10%" alt="logo" />
-            <a href="index.html" class="navbar-brand">ISEYC</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <body>
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg navbar-dark shadow sticky-top p-2">
+      <div class="container-fluid">
+        <img src="./img/logo.jpeg" width="60px" alt="logo" class="mr-2" />
+        <a href="index.html" class="navbar-brand">NACOS</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="event.html" class="nav-item nav-link active">Programs</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
-                        <div class="dropdown-menu">
-                            <a href="what_we_do.html" class="dropdown-item">What We Do</a>
-                            <a href="partners.html" class="dropdown-item">Meet Our Partners</a>
-                            <a href="membership.html" class="dropdown-item">Become A Member</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="excos.html" class="nav-item nav-link active">Executives</a>
+            <!-- <a href="event.html" class="nav-item nav-link">Programs</a> -->
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Membership</a
+              >
+              <div class="dropdown-menu">
+                <a href="what_we_do.html" class="dropdown-item">What We Do</a>
+                <a href="partners.html" class="dropdown-item"
+                  >Meet Our Partners</a
+                >
+                <!-- <a href="membership.html" class="dropdown-item">Become A Member</a> -->
+              </div>
             </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
         </div>
+      </div>
     </div>
-
+    <!-- Nav Bar End -->
 
     <!-- Page Header Start -->
     <div class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Our Programs</h2>
-                </div>
-                <div class="col-12">
-                    <a href="index.html">Home</a>
-                    <a href="programs.html">Programs</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Our Programs</h2>
+          </div>
+          <div class="col-12">
+            <a href="index.html">Home</a>
+            <!-- <a href="programs.html">Programs</a> -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- Page Header End -->
 
     <div class="container">
-        <div class="program-filter">
-            <button class="btn active" data-filter="all">All Programs</button>
-            <button class="btn" data-filter="upcoming">Upcoming</button>
-            <button class="btn" data-filter="past">Past</button>
-        </div>
+      <div class="program-filter">
+        <button class="btn active" data-filter="all">All Programs</button>
+        <button class="btn" data-filter="upcoming">Upcoming</button>
+        <button class="btn" data-filter="past">Past</button>
+      </div>
     </div>
 
     <!-- Event Start -->
     <div class="event">
-        <div class="container">
-            <div class="section-header text-center">
-                <p>Our Programs & Events</p>
-                <h2>Discover our initiatives and activities</h2>
-            </div>
-            <div id="events-container" class="row equal-height">
-                <!-- Loading spinner -->
-                <div class="col-12 loader-container">
-                    <div class="loader-spinner"></div>
-                    <p>Loading events...</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center">
+          <p>Our Programs & Events</p>
+          <h2>Discover our initiatives and activities</h2>
         </div>
+        <div id="events-container" class="row equal-height">
+          <!-- Loading spinner -->
+          <div class="col-12 loader-container">
+            <div class="loader-spinner"></div>
+            <p>Loading events...</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Event End -->
 
-
     <!-- Footer Start -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-contact">
-                        <h2>Our Head Office</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>Uche Secondus Street, After Wuye Police Station, La
-                            Primera Residence, Wuye Abuja</p>
-                        <p><i class="fa fa-phone-alt"></i>+2348036984766</p>
-                        <p><i class="fa fa-envelope"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                data-cfemail="0c657f69756f6b60636e6d604c6b616d6560226f6361">[email&#160;protected]</a>
-                        </p>
-                        <div class="footer-social">
-                            <a class="btn btn-custom" href="https://x.com/iseyc_global" target="_blank"
-                                rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-custom" href="https://facebook.com/iseyc_global" target="_blank"
-                                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-custom" href="https://instagram.com/iseyc_global" target="_blank"
-                                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="">About Us</a>
-                        <a href="">Contact Us</a>
-                    </div>
-                </div>
+    <div class="footer bg-dark text-white pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-contact">
+              <h2 class="text-success">NACOS Headquarters</h2>
+              <p><i class="fa fa-map-marker-alt"></i> Abuja, Nigeria</p>
+              <p><i class="fa fa-phone-alt"></i> +234 800 000 0000</p>
+              <p><i class="fa fa-envelope"></i> info@nacos.org.ng</p>
+              <div class="footer-social">
+                <a class="btn btn-custom" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-custom" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-custom" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-custom" href="#"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
             </div>
-        </div>
-        <div class="container copyright">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; <a href="#">ISEYC</a>, All Right Reserved.</p>
-                </div>
-                <div class="col-md-6">
-                    <p>Designed By <a href="https://www.geeksaxis.com">Geeksaxis LTD</a></p>
-                </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-link">
+              <h2 class="text-success">Quick Links</h2>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="membership.html">Join NACOS</a>
+              <a href="event.html">Programs</a>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h2 class="text-success">About NACOS</h2>
+            <p>
+              Nigeria Association of Computing Students (NACOS) is the umbrella
+              body for all IT and computer science students across Nigerian
+              tertiary institutions.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="container copyright text-center mt-4">
+        <p>
+          &copy; <a href="#">NACOS</a>, All Rights Reserved. | Designed By
+          <a href="#">Your Team</a>
+        </p>
+      </div>
     </div>
     <!-- Footer End -->
 
@@ -228,11 +269,14 @@
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- JavaScript Libraries -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -254,7 +298,5 @@
 
     <script src="js/firebase-config.js"></script>
     <script src="js/events.js"></script>
-    
-</body>
-
+  </body>
 </html>
