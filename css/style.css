@@ -252,13 +252,13 @@ a:focus {
 .navbar {
   background: linear-gradient(90deg, #004d00, #006600);
 }
-.navbar-brand {
+/*.navbar-brand {
   font-weight: 700;
   color: #fff !important;
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
+}*/
 .navbar-nav .nav-link {
   color: #fff !important;
   margin: 0 10px;
@@ -2483,3 +2483,4 @@ textarea {
 .event .btn-success:hover {
   background: #009624;
 }
+
