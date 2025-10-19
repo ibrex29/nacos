@@ -31,6 +31,27 @@
 
     <!-- Template Stylesheet -->
     <link href="style.css" rel="stylesheet" />
+
+    <style>
+
+      
+        .logo-circle {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;      
+  height: 80px;     
+  padding: 8px;
+}
+
+.logo-circle img {
+  width: 70px;     
+  height: auto;
+}
+
+    </style>
   </head>
 
   <body>
@@ -38,7 +59,12 @@
       class="navbar navbar-expand-lg bg-dark navbar-dark shadow sticky-top p-0"
     >
       <div class="container-fluid">
-        <img src="./img/logo.jpeg" width="100px" height="10%" alt="logo" />
+       <div class="logo-circle"> 
+                
+            
+        
+            <img src="./img/nlogo.png" width="100px" height="10%" alt="logo" />
+            </div>
         <a href="index.html" class="navbar-brand">NACOS</a>
         <button
           type="button"
@@ -265,6 +291,7 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
 
 
 
