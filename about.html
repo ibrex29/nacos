@@ -142,28 +142,62 @@
         
             <img src="./img/nlogo.png" width="100px" height="10%" alt="logo" />
             </div>
-            <a href="index.html" class="navbar-brand">NACOS</a>
+           <a class="navbar-brand d-flex align-items-center" href="index.html">   
+        <span class="brand-text">NACOS</span>
+        </a>    <!-- Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
-          <a href="excos.html" class="nav-item nav-link active">Executives</a>
-          <!-- <a href="event.html" class="nav-item nav-link">Programs</a> -->
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Membership</a>
-            <div class="dropdown-menu">
-              <a href="what_we_do.html" class="dropdown-item">What We Do</a>
-              <a href="partners.html" class="dropdown-item">Meet Our Partners</a>
-              <!-- <a href="membership.html" class="dropdown-item">Become A Member</a> -->
-            </div>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+              <li class="nav-item">
+               <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="membershipDropdown"
+                role="button"
+                data-toggle="dropdown"
+              >
+                Membership
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="what_we_do.html">What We Do</a>
+                <a class="dropdown-item" href="partners.html"
+                  >Meet Our Partners</a
+                >
+              </div>
+            </li>
+           
+          <!--  </li>
+             Call to Action -->
+          <!--  <li class="nav-item ml-3">
+              <a
+                href="membership.html"
+                class="btn btn-success px-3 rounded-pill"
+              >
+                Join Us
+              </a>
+            </li>-->
+          </ul>
+        </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+         
         </div>
       </div>
     </div>
@@ -631,6 +665,7 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
 
 
 
