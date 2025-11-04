@@ -25,7 +25,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
@@ -97,12 +97,25 @@
         color: #00e676;
       } 
       .footer .btn-custom {
-        background: #00e676;
-        color: #fff;
-        margin-right: 5px;
-        border-radius: 50%;
-        padding: 8px 10px;
-      }
+  background: #00e676;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 6px; /* small rounded corners */
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00e676; /* square border around each icon */
+  transition: all 0.3s ease;
+}
+
+.footer .btn-custom:hover {
+  background: transparent;
+  color: #00e676;
+}
+
       .footer .btn-custom:hover {
         background: #009f47;
       }
@@ -670,6 +683,7 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
 
 
 
